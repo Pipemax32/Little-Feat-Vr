@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Oculus/SampleFramework/Usage/CustomHands.unity
+  isLoaded: 1
+  isActive: 1
