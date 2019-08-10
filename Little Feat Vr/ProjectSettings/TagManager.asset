@@ -6,6 +6,7 @@ TagManager:
   tags:
   - clawSmall
   - clawBig
+  - Llave
   layers:
   - Default
   - TransparentFX

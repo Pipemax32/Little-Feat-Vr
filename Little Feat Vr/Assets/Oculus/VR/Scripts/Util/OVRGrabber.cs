@@ -61,6 +61,8 @@ public class OVRGrabber : MonoBehaviour
     protected Quaternion m_grabbedObjectRotOff;
 	protected Dictionary<OVRGrabbable, int> m_grabCandidates = new Dictionary<OVRGrabbable, int>();
 	protected bool operatingWithoutOVRCameraRig = true;
+    public GameObject Camara;
+    
 
     /// <summary>
     /// The currently grabbed object.
@@ -208,14 +210,16 @@ public class OVRGrabber : MonoBehaviour
 
     protected virtual void GrabBegin()
     {
+        
         float closestMagSq = float.MaxValue;
 		OVRGrabbable closestGrabbable = null;
         Collider closestGrabbableCollider = null;
 
         // Iterate grab candidates and find the closest grabbable candidate
-		foreach (OVRGrabbable grabbable in m_grabCandidates.Keys)
+        foreach (OVRGrabbable grabbable in m_grabCandidates.Keys)
         {
             bool canGrab = !(grabbable.isGrabbed && !grabbable.allowOffhandGrab);
+            if (!IsInView(Camara.gameObject, grabbable.gameObject, Camara.GetComponent<Camera>())) canGrab = false;
             if (!canGrab)
             {
                 continue;
@@ -371,4 +375,34 @@ public class OVRGrabber : MonoBehaviour
             GrabbableRelease(Vector3.zero, Vector3.zero);
         }
     }
+    private bool IsInView(GameObject origin, GameObject toCheck, Camera cam)
+    {
+        Vector3 pointOnScreen = cam.WorldToScreenPoint(toCheck.GetComponentInChildren<Renderer>().bounds.center);
+
+        //Is in front
+        if (pointOnScreen.z < 0)
+        {
+            Debug.Log("Behind: " + toCheck.name);
+            return false;
+        }
+
+        RaycastHit hit;
+        Vector3 heading = toCheck.transform.position - origin.transform.position;
+        Vector3 direction = heading.normalized;// / heading.magnitude;
+
+        if (Physics.Linecast(cam.transform.position, toCheck.GetComponentInChildren<Renderer>().bounds.center, out hit))
+        {
+            if (hit.transform.name != toCheck.name)
+            {
+                /* -->
+                Debug.DrawLine(cam.transform.position, toCheck.GetComponentInChildren<Renderer>().bounds.center, Color.red);
+                Debug.LogError(toCheck.name + " occluded by " + hit.transform.name);
+                */
+                Debug.Log(toCheck.name + " occluded by " + hit.transform.name);
+                return false;
+            }
+        }
+        return true;
+    }
+
 }

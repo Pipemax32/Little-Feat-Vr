@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{EDF9B4D2-03C5-8530-22D1-E61026C15038}</ProjectGuid>
+    <ProjectGuid>{0BE37004-75A6-8FDA-D074-E2256489E53B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -88,19 +88,19 @@
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPPropagationSerializationManager.cs" />
     <Compile Include="Assets\Oculus\Spatializer\editor\ONSPReflectionCustomGUI.cs" />
     <Reference Include="Assembly-UnityScript">
-      <HintPath>C:/Users/adm/Documents/vr test 2/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+      <HintPath>E:/Little-Feat-Vr-master/Little Feat Vr/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/adm/Documents/vr test 2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/Little-Feat-Vr-master/Little Feat Vr/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/adm/Documents/vr test 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Little-Feat-Vr-master/Little Feat Vr/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/adm/Documents/vr test 2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Little-Feat-Vr-master/Little Feat Vr/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/adm/Documents/vr test 2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Little-Feat-Vr-master/Little Feat Vr/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -393,19 +393,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{AB735E1E-2C3A-1B98-08A2-21E66B48EDB5}</Project>
+      <Project>{2EBB5415-8D52-7AD0-39F0-46900707FD5F}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{A643FC87-836E-4BD8-3EDE-93EC2E43B9D3}</Project>
+      <Project>{550B0EBB-25EE-F593-830C-8798821460C4}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{B3B17073-64D3-58C5-E113-3BD4A3F3D6E7}</Project>
+      <Project>{59246FB0-9B1A-3FE1-544F-49B20301F8C2}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{E7D3E57E-5D00-1811-7021-09527C5CB116}</Project>
+      <Project>{27521B53-8DE7-9606-FDEF-BD836B182DC2}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
   </ItemGroup>

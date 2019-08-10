@@ -111,9 +111,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4416500466500976}
   - component: {fileID: 136354009896527736}
+  - component: {fileID: 114830253387832808}
   m_Layer: 0
   m_Name: clawBig
-  m_TagString: Untagged
+  m_TagString: clawBig
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,6 +759,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1536734620433926
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4051183470680850}
+  - component: {fileID: 108377851198283850}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1555301912603070
 GameObject:
   m_ObjectHideFlags: 1
@@ -1395,6 +1412,19 @@ Transform:
   m_Father: {fileID: 4748715275183134}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0.39299998, y: 90.532, z: -50.801}
+--- !u!4 &4051183470680850
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536734620433926}
+  m_LocalRotation: {x: 0.5278283, y: -0.09756994, z: 0.08402699, w: 0.83953375}
+  m_LocalPosition: {x: 0.0007164484, y: -0.0031362877, z: 0.0026496015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4416500466500976}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4051243544033942
 Transform:
   m_ObjectHideFlags: 1
@@ -1802,6 +1832,7 @@ Transform:
   m_Children:
   - {fileID: 4642524245815470}
   - {fileID: 4960562089542226}
+  - {fileID: 4051183470680850}
   m_Father: {fileID: 4752042190023458}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 35.511, y: -28.761002, z: 181.30399}
@@ -2749,6 +2780,43 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!108 &108377851198283850
+Light:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1536734620433926}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.6324958, b: 0, a: 1}
+  m_Intensity: 0.2
+  m_Range: 0.3
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114137105355478638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2762,6 +2830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   claw: {fileID: 1090632981367294}
   controller: 1
+  button: 2
 --- !u!114 &114191961510194064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2782,6 +2851,7 @@ MonoBehaviour:
   - {fileID: 136727591550400978}
   m_controller: 1
   m_parentTransform: {fileID: 0}
+  Camara: {fileID: 0}
 --- !u!114 &114265516559497924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2807,6 +2877,20 @@ MonoBehaviour:
   m_controller: 1
   m_animator: {fileID: 95121610026974972}
   m_defaultGrabPose: {fileID: 11437176, guid: 35525acb4c3b75c4a8c4dc2c117427be, type: 2}
+--- !u!114 &114830253387832808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1090632981367294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd980f8ed3324d4db063a7cd5e3ba10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spdScaleEdit: {x: 0.01, y: 0.01, z: 0.01}
+  scaleMax: {x: 0.5, y: 0.5, z: 0.5}
+  scaleMin: {x: 0, y: 0, z: 0}
 --- !u!136 &136000573617820046
 CapsuleCollider:
   m_ObjectHideFlags: 1
