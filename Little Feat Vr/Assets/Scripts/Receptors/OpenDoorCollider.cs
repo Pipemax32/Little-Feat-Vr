@@ -11,7 +11,12 @@ public class OpenDoorCollider : MonoBehaviour
     public AudioClip clipOpen;
     public AudioClip clipClose;
 
-    bool hasSounded = false;
+    public MeshRenderer outputPlane;
+
+    public Texture open;
+    public Texture close;
+
+    bool hasSounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +33,7 @@ public class OpenDoorCollider : MonoBehaviour
             this.GetComponent<Rigidbody>().isKinematic = false;
             this.gameObject.layer = 10;
             this.GetComponent<VRTK.VRTK_InteractableObject>().isGrabbable = true;
+            outputPlane.material.mainTexture = open;
         }
         else
         {
@@ -36,6 +42,7 @@ public class OpenDoorCollider : MonoBehaviour
             this.gameObject.layer = 11;
             this.transform.rotation = initRot;
             this.transform.position = initPos;
+            outputPlane.material.mainTexture = close;
         }
         if (this.GetComponent<Receptor>().isActivated < 0)
         {

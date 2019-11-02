@@ -18,7 +18,7 @@ public class WeightedPlate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        iconDisplay.GetComponent<MeshRenderer>().material.mainTexture = textureIdle;
     }
 
     // Update is called once per frame
@@ -59,11 +59,14 @@ public class WeightedPlate : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        active = false;
-        iconDisplay.GetComponent<MeshRenderer>().material.mainTexture = textureIdle;
-        for (int i = 0; i < this.gameObject.GetComponent<Emissor>().receptors.Length; i++)
+        if (collision.gameObject.layer == 10)
+        {
+            active = false;
+            iconDisplay.GetComponent<MeshRenderer>().material.mainTexture = textureIdle;
+            for (int i = 0; i < this.gameObject.GetComponent<Emissor>().receptors.Length; i++)
             {
                 this.gameObject.GetComponent<Emissor>().addSignal(-1, this.gameObject.GetComponent<Emissor>().receptors[i]);
             }
+        }
     }
 }
