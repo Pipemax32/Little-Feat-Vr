@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - ClawSmall
     - EditSize
     - Emissor
+    - HandAni
     - KeyBehaviour
     - LinkedObjects
     - LockBehaviour
@@ -67,8 +68,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -87,7 +90,7 @@ ScriptsOnlyBuild:
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scenes/TestLevel1.unity:
+    Assets/Scenes/MVPLevel.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -139,43 +142,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11430}
+      Script: {instanceID: 11424}
     - Class: 114
-      Script: {instanceID: 11452}
+      Script: {instanceID: 11446}
     - Class: 114
-      Script: {instanceID: 11498}
+      Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11524}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 11550}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 11576}
+      Script: {instanceID: 11570}
+    - Class: 114
+      Script: {instanceID: 11646}
     - Class: 114
       Script: {instanceID: 11652}
     - Class: 114
-      Script: {instanceID: 11658}
+      Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11750}
+      Script: {instanceID: 11806}
     - Class: 114
-      Script: {instanceID: 11812}
+      Script: {instanceID: 11832}
     - Class: 114
-      Script: {instanceID: 11838}
+      Script: {instanceID: 11918}
     - Class: 114
-      Script: {instanceID: 11924}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 11964}
+      Script: {instanceID: 12050}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 12072}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 12150}
     - Class: 114
-      Script: {instanceID: 12180}
+      Script: {instanceID: 12176}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12182}
     - Class: 114
-      Script: {instanceID: 12300}
+      Script: {instanceID: 12298}
     - Class: 114
-      Script: {instanceID: 12324}
+      Script: {instanceID: 12322}
     - Class: 114
       Script: {instanceID: 12650}
     - Class: 114
@@ -193,67 +198,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13236}
+      Script: {instanceID: 13238}
     - Class: 114
-      Script: {instanceID: 13336}
+      Script: {instanceID: 13338}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13392}
     - Class: 114
-      Script: {instanceID: 13430}
+      Script: {instanceID: 13432}
     - Class: 114
-      Script: {instanceID: 13456}
+      Script: {instanceID: 13458}
     - Class: 114
-      Script: {instanceID: 13498}
+      Script: {instanceID: 13500}
     - Class: 114
-      Script: {instanceID: 13582}
+      Script: {instanceID: 13584}
     - Class: 114
-      Script: {instanceID: 13772}
+      Script: {instanceID: 13774}
     - Class: 114
-      Script: {instanceID: 13786}
+      Script: {instanceID: 13788}
     - Class: 114
-      Script: {instanceID: 13846}
+      Script: {instanceID: 13848}
     - Class: 114
-      Script: {instanceID: 13862}
+      Script: {instanceID: 13864}
     - Class: 114
-      Script: {instanceID: 13880}
+      Script: {instanceID: 13882}
     - Class: 114
-      Script: {instanceID: 13932}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 14042}
+      Script: {instanceID: 14044}
     - Class: 114
-      Script: {instanceID: 14168}
+      Script: {instanceID: 14170}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14262}
     - Class: 114
-      Script: {instanceID: 14286}
+      Script: {instanceID: 14288}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14402}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 14472}
     - Class: 114
-      Script: {instanceID: 14474}
+      Script: {instanceID: 14476}
     - Class: 114
-      Script: {instanceID: 14506}
+      Script: {instanceID: 14508}
     - Class: 114
-      Script: {instanceID: 14688}
+      Script: {instanceID: 14690}
     - Class: 114
-      Script: {instanceID: 14854}
+      Script: {instanceID: 14856}
     - Class: 114
-      Script: {instanceID: 14882}
+      Script: {instanceID: 14884}
     - Class: 114
-      Script: {instanceID: 14892}
+      Script: {instanceID: 14894}
     - Class: 114
-      Script: {instanceID: 14994}
+      Script: {instanceID: 14996}
     - Class: 114
-      Script: {instanceID: 15062}
+      Script: {instanceID: 15064}
     - Class: 114
-      Script: {instanceID: 15080}
+      Script: {instanceID: 15082}
     - Class: 114
-      Script: {instanceID: 15118}
+      Script: {instanceID: 15120}
     - Class: 114
-      Script: {instanceID: 15194}
+      Script: {instanceID: 15196}
     - Class: 114
-      Script: {instanceID: 15228}
+      Script: {instanceID: 15230}
     - Class: 114
       Script: {instanceID: 15640}
     - Class: 114
@@ -265,7 +270,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15840}
     - Class: 114
-      Script: {instanceID: 108350}
+      Script: {instanceID: 136820}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -291,6 +296,12 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1039,6 +1050,12 @@ ScriptsOnlyBuild:
     className: OVRAudioSourceTest
   - hash:
       serializedVersion: 2
+      Hash: c77b1b56e1d67fe9aa9defac63bfbd7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AlternatingDoor
+  - hash:
+      serializedVersion: 2
       Hash: 4f03875303977b0819d112d67f667f11
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK
@@ -1145,6 +1162,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.Examples
     className: Controller_Menu
+  - hash:
+      serializedVersion: 2
+      Hash: bf2f31fb774f110edbbb3535d5885306
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandAnimator
   - hash:
       serializedVersion: 2
       Hash: a01f5fdb7bcdde54e45412c1be54d990
@@ -4195,7 +4218,7 @@ ScriptsOnlyBuild:
     className: LockToLock
   - hash:
       serializedVersion: 2
-      Hash: b4d278bcca1055fd3c9791d00a07fcfd
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -4345,7 +4368,7 @@ ScriptsOnlyBuild:
     className: VRTK_ControlAnimationGrabAttach_UnityEvents
   - hash:
       serializedVersion: 2
-      Hash: f59c8c184ed8a900b6328d86491e06f4
+      Hash: fa385496900997708bf269fea9eec97a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LockBehaviour
@@ -4393,17 +4416,24 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 04d968ce08a2a237e9858307b504191a
+      Hash: 68f692c882856b2cfd62b21cb50556a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenDoorCollider
   - hash:
       serializedVersion: 2
-      Hash: c77b1b56e1d67fe9aa9defac63bfbd7b
+      Hash: 3532ffb61c8843c69ed71fe0dd03a5ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: AlternatingDoor
+    className: micTest
+  - hash:
+      serializedVersion: 2
+      Hash: bf2f31fb774f110edbbb3535d5885306
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandAni
   platform: 19
   scenePathNames:
-  - Assets/Scenes/TestLevel1.unity
-  playerPath: C:/Users/44871063/Desktop/Little Feat Vr BUILDS/LFVR 0.5/vr test 2.exe
+  - Assets/Scenes/MVPLevel.unity
+  playerPath: E:/Users/Rodrigo/Desktop/Software/Little Feat Vr BUILDS/LFVR 1.0.1/Little
+    Feat VR.exe

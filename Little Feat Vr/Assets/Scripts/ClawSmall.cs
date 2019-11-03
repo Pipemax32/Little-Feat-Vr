@@ -20,7 +20,7 @@ public class ClawSmall : MonoBehaviour {
             claw.SetActive(true);
             if (sndCont == false)
             {
-                claw.GetComponent<AudioSource>().Play();
+       //         claw.GetComponent<AudioSource>().Play();
                 sndCont = true;
             }
         }
@@ -29,7 +29,7 @@ public class ClawSmall : MonoBehaviour {
             claw.SetActive(false);
             if (sndCont == true)
             {
-                claw.GetComponent<AudioSource>().Stop();
+      //          claw.GetComponent<AudioSource>().Stop();
                 sndCont = false;
             }
         }
