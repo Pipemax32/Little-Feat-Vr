@@ -226,51 +226,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14044}
     - Class: 114
-      Script: {instanceID: 14170}
+      Script: {instanceID: 14172}
     - Class: 114
-      Script: {instanceID: 14262}
+      Script: {instanceID: 14264}
     - Class: 114
-      Script: {instanceID: 14288}
+      Script: {instanceID: 14290}
     - Class: 114
-      Script: {instanceID: 14402}
+      Script: {instanceID: 14404}
     - Class: 114
-      Script: {instanceID: 14472}
+      Script: {instanceID: 14474}
     - Class: 114
-      Script: {instanceID: 14476}
+      Script: {instanceID: 14478}
     - Class: 114
-      Script: {instanceID: 14508}
+      Script: {instanceID: 14510}
     - Class: 114
-      Script: {instanceID: 14690}
+      Script: {instanceID: 14608}
     - Class: 114
-      Script: {instanceID: 14856}
+      Script: {instanceID: 14694}
     - Class: 114
-      Script: {instanceID: 14884}
+      Script: {instanceID: 14860}
     - Class: 114
-      Script: {instanceID: 14894}
+      Script: {instanceID: 14888}
     - Class: 114
-      Script: {instanceID: 14996}
+      Script: {instanceID: 14898}
     - Class: 114
-      Script: {instanceID: 15064}
+      Script: {instanceID: 15000}
     - Class: 114
-      Script: {instanceID: 15082}
+      Script: {instanceID: 15068}
     - Class: 114
-      Script: {instanceID: 15120}
+      Script: {instanceID: 15086}
     - Class: 114
-      Script: {instanceID: 15196}
+      Script: {instanceID: 15124}
     - Class: 114
-      Script: {instanceID: 15230}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15640}
+      Script: {instanceID: 15234}
     - Class: 114
-      Script: {instanceID: 15694}
+      Script: {instanceID: 15644}
     - Class: 114
-      Script: {instanceID: 15720}
+      Script: {instanceID: 15698}
     - Class: 114
-      Script: {instanceID: 15798}
+      Script: {instanceID: 15724}
     - Class: 114
-      Script: {instanceID: 15840}
+      Script: {instanceID: 15802}
     - Class: 114
-      Script: {instanceID: 136820}
+      Script: {instanceID: 15844}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -2910,6 +2910,12 @@ ScriptsOnlyBuild:
     className: SteamVR_ForceSteamVRMode
   - hash:
       serializedVersion: 2
+      Hash: 3532ffb61c8843c69ed71fe0dd03a5ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: micTest
+  - hash:
+      serializedVersion: 2
       Hash: bfd7a24fb42877f9e4230bc1bf7f27df
     assemblyName: Assembly-CSharp.dll
     namespaceName: VRTK.GrabAttachMechanics
@@ -3412,6 +3418,12 @@ ScriptsOnlyBuild:
     assemblyName: SteamVR.dll
     namespaceName: Valve.VR.InteractionSystem
     className: Balloon
+  - hash:
+      serializedVersion: 2
+      Hash: bf2f31fb774f110edbbb3535d5885306
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandAni
   - hash:
       serializedVersion: 2
       Hash: 059c625504141ee9b12a681866d0f499
@@ -4420,20 +4432,8 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OpenDoorCollider
-  - hash:
-      serializedVersion: 2
-      Hash: 3532ffb61c8843c69ed71fe0dd03a5ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: micTest
-  - hash:
-      serializedVersion: 2
-      Hash: bf2f31fb774f110edbbb3535d5885306
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HandAni
   platform: 19
   scenePathNames:
   - Assets/Scenes/MVPLevel.unity
-  playerPath: E:/Users/Rodrigo/Desktop/Software/Little Feat Vr BUILDS/LFVR 1.0.1/Little
+  playerPath: E:/Users/Rodrigo/Desktop/Software/Little Feat Vr BUILDS/LFVR 1.0.2/Little
     Feat VR.exe
